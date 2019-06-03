@@ -1,0 +1,74 @@
+.color1 {
+    color: blue;
+  }
+  .border0{
+    border: var(--background);
+    --inner-border-width: 0px 0px 0px 0px;
+  }
+  .border00{
+   
+    --inner-border-width: 0px 0px 0px 0px;
+  }
+  .padding16px{
+    padding: right 16px;
+  }
+  .margin-left16{
+      margin-left:16px;
+  }
+  .margin-left-16{
+    margin-left:-16px;
+  }
+  .margin-left-10{
+    margin-left:10px;
+  }
+  .colorroyalblue{
+    color:royalblue;
+  }
+  .color3{
+    color: #333333;
+  }
+  /* css-icon-chu-thich */
+  .bacgrondicon1{
+    background: green;color: green; 
+  }
+  .bacgrondicon2{
+    background: #474747;color:#474747 ;
+  }
+  .bacgrondicon3{
+    background: #a50606;color: #a50606;
+  }
+  .bacgrondicon4{
+    background: #b84c04;color: #b84c04;
+  }
+ion-toolbar{
+    --background:linear-gradient( #3867B4,#0F94B4 );
+    --color:#ddeaed;
+  }
+  .header2{
+    background-color: linear-gradient( #3867B4,#0F94B4 );
+    color:#ddeaed;
+  }
+  .warninglb{
+    white-space: normal;
+    color:#333333;
+    font-size: 14px;
+    margin-left:10px;
+  }
+  .dateTitle{
+    text-align: center;
+    color: blue;
+  }
+  .lbchuthich{
+    color:#247ab3;
+  }
+  .font100{
+    font-size: 100%
+  }
+  .item2{
+    --background: var(--background);
+  }
+  .font{
+    font-family:Segoe UI;
+
+  }
+  /////////////////

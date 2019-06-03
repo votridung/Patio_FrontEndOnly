@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar class="header border00">
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="md-arrow-back" class="header"></ion-back-button>
+    </ion-buttons>
+    <label padding>{{title}}</label>
+    <ion-buttons (click)="TaoHS()" slot="end">
+      <ion-button class="md button  ion-activatable ion-focusable hydrated header">
+        <ion-icon style="color: #ddeaed" name="person-add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- CONTENT------------///------------------------------>
+<ion-content class="md hydrated background1">
+  <!-- item-ten-nguoi-benh-------------------------->
+  <ion-item class="border11 item-warning">
+      <a><ion-icon class="icon-warning" name="ios-information-circle-outline" slot="start"></ion-icon></a>  
+    <ion-label class="warning">Vui lòng chọn 1 trong các hồ sơ bên dưới hoặc bấm vào biểu tượng ở trên để thêm hồ sơ
+      người bệnh.</ion-label>
+  </ion-item>
+
+  <!-- Add component-------------------------------->
+  <app-item-danh-sach-benh-nhan-component *ngFor="let benhnhan of results" name="{{ benhnhan.name }}"
+    address="{{ benhnhan.address.city}}" mobile="{{ benhnhan.phone}}"> >
+  </app-item-danh-sach-benh-nhan-component>
+  <!-- -----------//----------------------------------->
+</ion-content>

@@ -1,0 +1,47 @@
+.small{
+    padding-right: 5px
+}
+
+.bor{
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    border-width:thin;
+}
+ion-card{
+    min-height: auto;
+}
+.header{
+    --background: linear-gradient(to top ,#0F94B4 0%,#3867B4 100%);
+    --color: white;
+}
+.headerr{
+    --background: #3867B4 ;
+    --color: white;
+}
+ion-searchbar{
+     --color:#3867B4 ;
+     --background: white ;
+}
+
+ion-select{
+    
+    margin: 3px;
+}
+ion-select-option{
+    font-size: smaller
+}
+ion-item{
+    --inner-border-width: 0px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+ion-label{
+    padding-left: 5px;
+    --font-size: smaller
+}
+.scroll {
+    display: flex;
+    overflow-x: scroll;
+      overflow-y: hidden;
+  } 

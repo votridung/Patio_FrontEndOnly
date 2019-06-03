@@ -1,0 +1,50 @@
+.sa{
+    padding-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.header{
+    --background: linear-gradient(#3867B4,#0F94B4);
+    --color: white;
+}
+.next{
+    color: white;
+    --background: linear-gradient(#3867B4,#0F94B4);
+}
+ion-content{
+    width: 100%;
+    height: 90%;
+}
+ion-list{
+    width: 100%;
+    height: 100%;
+}
+div{
+    width: 100%;
+    height: 100%;
+}
+.outer {
+
+    width: 100%;
+
+    display: flex;
+
+    box-orient: horizontal;
+
+    box-pack: center;
+
+    box-align: center;
+}
+
+.btn {
+    text-align: center;
+    max-height: 40px;
+    width: 49%;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ion-item{
+    --inner-border-width: 0px 
+}
+

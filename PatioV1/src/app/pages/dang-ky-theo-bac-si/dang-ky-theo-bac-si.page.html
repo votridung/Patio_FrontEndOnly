@@ -1,0 +1,79 @@
+<ion-header>
+        <ion-toolbar class="headerr">
+                <ion-buttons slot="start">
+                        <ion-button style="--color: white" (click)=dongdangkykhamtheobs()>
+                                <ion-icon slot="icon-only" icon="md-arrow-back"></ion-icon>
+                        </ion-button>
+                </ion-buttons>
+                <ion-label style="padding-left: 5px">Đăng ký khám</ion-label>
+        </ion-toolbar>
+        <ion-toolbar class="header">
+                <ion-searchbar animated></ion-searchbar>
+                <div class="scroll">  
+                                <div>                     
+                                        <ion-select   mode="ios" class="bor" okText="Đồng ý" cancelText="Thoát"  interface="popover" placeholder="Giới tính">
+                                                <ion-select-option value="f">Nam</ion-select-option>
+                                                <ion-select-option value="m">Nữ</ion-select-option>
+                                        </ion-select> 
+                                </div>
+                                <div>
+                                        <ion-select mode="ios" class="bor" okText="Đồng ý"  cancelText="Thoát" interface="popover" placeholder="Chuyên khoa">
+                                                <ion-select-option value="rhm">Răng hàm mặt</ion-select-option>
+                                                <ion-select-option value="tmh">Tai mũi họng</ion-select-option>
+                                                <ion-select-option value="hh">Huyết học</ion-select-option>
+                                                
+                                        </ion-select>
+                                </div>
+                                <div >
+                                        <ion-select  mode="ios"  class="bor" okText="Đồng ý" interface="popover" cancelText="Thoát" placeholder="Lịch khám">
+                                                <ion-select-option value="s">Sáng</ion-select-option>
+                                                <ion-select-option value="c">Chiều</ion-select-option>
+                                        </ion-select>
+                                </div>
+                                <div>
+                                        <ion-select  mode="ios" class="bor" okText="Đồng ý" interface="popover" cancelText="Thoát" placeholder="Buổi">
+                                                <ion-select-option value="f">Sáng</ion-select-option>
+                                                <ion-select-option value="m">Chiều</ion-select-option>
+                                        </ion-select> 
+                                </div>
+                                <div> 
+                                        <ion-select  mode="ios" class="bor" okText="Đồng ý" interface="popover" cancelText="Thoát" placeholder="Bằng cấp">
+                                                <ion-select-option value="f">Thạc sĩ</ion-select-option>
+                                                <ion-select-option value="m">Tiến sĩ</ion-select-option>
+                                        </ion-select> 
+                                </div>
+                                         
+                </div>  
+
+
+        </ion-toolbar>
+</ion-header>
+
+<ion-content>
+        <ion-card>
+                <ion-item button (click)=dongdangkykhamtheobs() class="small" placeholder=" Chưa cập nhật">
+                        <ion-icon  color="primary"  name="person"></ion-icon>Bác sĩ: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Giới tính: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Chuyên khoa: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Lịch khám: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Giá khám: <ion-label></ion-label>
+                </ion-item>
+        </ion-card>
+        <ion-card>
+                <ion-item button (click)=dongdangkykhamtheobs() class="small" placeholder=" Chưa cập nhật">
+                        <ion-icon color="primary" name="person"></ion-icon>Bác sĩ: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Giới tính: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Chuyên khoa: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Lịch khám: <ion-label></ion-label>
+                </ion-item>
+                <ion-item class="sa" placeholder=" Chưa cập nhật">Giá khám: <ion-label></ion-label>
+                </ion-item>
+        </ion-card>
+</ion-content>

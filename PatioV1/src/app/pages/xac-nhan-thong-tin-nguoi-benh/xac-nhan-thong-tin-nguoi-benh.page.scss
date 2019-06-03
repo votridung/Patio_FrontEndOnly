@@ -1,0 +1,28 @@
+.header{
+    color: white;
+    --background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+}
+ion-button{
+    color: white;
+    --background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+}
+ion-content{
+    --background: #e5e8ed;
+}
+ion-card{
+    --background: white;
+}
+div{
+    background: #e5e8ed;
+}
+ion-item{
+    padding-right: 15px;
+    --inner-border-width: 0px 0px 0.5px 0px;
+    --border-color:rgb(240, 240, 240) ; 
+}
+.border0{
+    --inner-border-width: 0px 
+}
+ion-select{
+    color: white;
+}

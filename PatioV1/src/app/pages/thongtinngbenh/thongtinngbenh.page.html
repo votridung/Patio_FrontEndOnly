@@ -1,0 +1,119 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-label padding>{{title}}</ion-label>
+    <!-- <ion-buttons slot="end"><ion-button class="md button  ion-activatable ion-focusable hydrated header" ><ion-icon style="color: honeydew" name="md-more"></ion-icon></ion-button></ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+<!-- CONTENT-----------------------------//------------------------------------------------>
+<ion-content class="backgrond">
+  <!-- --------------------------------------------------->
+  <ion-card>
+    <ion-item class="border0">
+      <ion-icon style="color:#545559" name="contact" slot="start"></ion-icon>
+      <h5> Thông tin người bệnh </h5>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Họ tên</ion-label>
+      </ion-label>
+      <ion-label>{{name}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Mã số bệnh nhân</ion-label>
+      </ion-label>
+      <ion-label>{{MaSo}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Ngày sinh</ion-label>
+      </ion-label>
+      <ion-label>{{NgaySinh}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Giới tính </ion-label>
+      </ion-label>
+      <ion-label>{{GioiTinh}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">CMDN/Passpost</ion-label>
+      </ion-label>
+      <ion-label>{{Cmnd}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Nghề nghiệp</ion-label>
+      </ion-label>
+      <ion-label>{{NgheNghiep}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Quốc gia</ion-label>
+      </ion-label>
+      <ion-label>{{QuocGia}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Dân tộc</ion-label>
+      </ion-label>
+      <ion-label>{{DanToc}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Số điện thoại</ion-label>
+      </ion-label>
+      <ion-label>{{SoDienThoai}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Email</ion-label>
+      </ion-label>
+      <ion-label>{{Email}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        <ion-label class="h3-1">Địa chỉ</ion-label>
+      </ion-label>
+      <ion-label>{{Adress}}</ion-label>
+    </ion-item>
+  </ion-card>
+  <ion-card >
+      <ion-item class="border0">
+        <ion-icon style="color:#545559" name="contact" slot="start"></ion-icon>
+        <h5> Thông tin người thân </h5>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <ion-label class="h3-1">Họ tên</ion-label>
+        </ion-label>
+        <ion-label>{{name}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <ion-label class="h3-1">Quan hệ</ion-label>
+        </ion-label>
+        <ion-label>{{quanhe}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <ion-label class="h3-1">Số điện thoại</ion-label>
+        </ion-label>
+        <ion-label>{{SoDienThoai}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <ion-label class="h3-1">Email </ion-label>
+        </ion-label>
+        <ion-label>{{Email}}</ion-label>
+      </ion-item>
+    </ion-card>
+</ion-content>
+
+<div padding >
+    <ion-button expand="block"  (click)="presentActionSheet()"> Đăng ký khám </ion-button>
+</div>

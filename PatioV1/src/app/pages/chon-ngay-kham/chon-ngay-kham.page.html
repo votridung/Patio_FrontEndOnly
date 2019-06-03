@@ -1,0 +1,80 @@
+<ion-header>
+<ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+      </ion-buttons>
+  <ion-label padding>Vui lòng chọn ngày khám</ion-label>
+</ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding" >
+
+    <!-- Calendar-CART ------------------------>
+    <ion-card>
+        <ion-item >
+            <ion-label class="colorroyalblue" style="float:right;"><h4>{{viewTitle}}</h4></ion-label>
+            <ion-buttons end>
+                <ion-button ion-button [disabled]="isToday" (click)="today()">Hôm nay</ion-button>
+                <ion-button class="btn" ion-button (click)="loadEvents()">Ngày lễ</ion-button>
+            </ion-buttons>   
+        </ion-item>
+    <!-- Calendar -->
+      <calendar       
+              [eventSource]="eventSource"
+              [calendarMode]="calendar.mode"
+              [currentDate]="calendar.currentDate"
+              (onCurrentDateChanged)="onCurrentDateChanged($event)"
+              (onEventSelected)="onEventSelected($event)"
+              (onTitleChanged)="onViewTitleChanged($event)"
+              (onTimeSelected)="onTimeSelected($event)"  
+              class="calendar"
+              step="30">
+      </calendar>
+      <!---//----->
+
+    </ion-card>
+    
+  <!-- Chú thích ---------------------->
+    <br/>
+    <ion-item class="border0 margin-left-16">
+      <a><ion-icon  name="information-circle" slot="start"></ion-icon></a>
+      <ion-label class="warninglb"  >Thứ 7 chỉ khám buổi sáng.</ion-label>
+    </ion-item>
+    
+    <ion-item class="border0 margin-left-16">
+      <a><ion-icon name="information-circle" slot="start"></ion-icon></a>
+      <ion-label class="warninglb" >  Bạn chỉ có thể đăng ký sau hôm nay từ 1 đến 30 ngày.</ion-label>
+    </ion-item>
+    
+    <ion-item class="border0 margin-left-16" >
+      <a><ion-icon   name="information-circle" slot="start"></ion-icon></a>
+      <ion-label class="warninglb" >  Nếu muốn chọn khám vào ngày mai vui lòng hoàn tất việc đăng ký trước 16:30 hôm nay.</ion-label>
+    </ion-item>
+    <br/>
+      <ion-label class="lbchuthich"> Chú thích: </ion-label>
+    <br/>
+    <ion-item-divider class="border0 item2" >
+      <ion-icon  class="bacgrondicon1 font100" name="square"></ion-icon>
+      <ion-label   class="margin-left-10 color3">  ngày có thể chọn </ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider class="border0 item2" >
+      <ion-icon  class="bacgrondicon2 font100"  name="square"></ion-icon>
+      <ion-label  class="margin-left-10 color3">  ngày không thể </ion-label>
+    </ion-item-divider>
+
+    <ion-item-divider class="border0 item2" >
+      <ion-icon class="bacgrondicon3 font100"  name="square"></ion-icon>
+      <ion-label  class="margin-left-10 color3">  ngày hiện tại </ion-label>
+      </ion-item-divider>
+
+    <ion-item-divider class="border0 item2" >
+      <ion-icon class="color1 bacgrondicon4 font100"   name="square"></ion-icon>
+      <ion-label  class="margin-left-10 color3">  ngày nghỉ, lễ tết </ion-label>
+    </ion-item-divider>
+    <!------------------ // ----------------->
+</ion-content>
+<style>
+
+</style>
+
+

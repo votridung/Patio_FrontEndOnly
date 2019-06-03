@@ -1,0 +1,19 @@
+<ion-header> 
+    
+    <ion-toolbar> 
+        <ion-buttons slot="start">
+            <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+          </ion-buttons>
+      <ion-label style="padding-left: 5px">Tạo Hồ Sơ Đăng Ký Khám Bệnh</ion-label>
+    </ion-toolbar>
+  </ion-header>
+  <div padding class="Regitser">
+      <ion-img expand="block" class="images1" src="../assets/img/Capture.jpg"></ion-img>
+    </div>
+    
+  <ion-content>
+      <ion-button (click)="NhapHS()" expand="block" padding color="secondary"> Đã Từng Khám , Nhập Số Hồ Sơ </ion-button>
+      <ion-button (click)="TaoHS()" expand="block"padding >  Tạo Hồ Sơ Mới</ion-button>
+      <ion-button (click)="DacoHS()" expand="block"padding > Đã có hồ sơ (btn_tạm)</ion-button>
+  </ion-content>
+  

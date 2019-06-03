@@ -1,0 +1,53 @@
+<ion-thumbnail class="bg-img">
+  <img class="img" src="../assets/img/home-img1.jpg">
+  <ion-button expand="block" class="select" fill="outline" (click)="tenbvPicker()">
+    <!-- <ion-label>Chọn địa điểm</ion-label> -->
+    <!-- <ion-icon name="pin"></ion-icon>
+    <ion-select placeholder="Chọn địa điểm bệnh viện">
+      <ion-select-option value="f">Bệnh viện FPT cơ sở Tp.HCM</ion-select-option>
+      <ion-select-option value="m">Bệnh viện FPT cơ sở Hà Nội</ion-select-option>
+    </ion-select> -->
+    <ion-icon name="pin"></ion-icon>
+    <ion-label>{{tenbv}}</ion-label>
+  </ion-button>
+  <!-- <ion-thumbnail padding class="content"> -->
+  <ion-grid>
+    <ion-row >
+      <ion-col>
+        <div (click)="presentActionSheet()" class="btn-group">
+          <ion-avatar class="avatar">
+            <img  src="../assets/img/dangky.jpg">
+          </ion-avatar>
+          <p class="avatar-text" >Đăng ký khám bệnh</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="btn-group" (click)="DSClick()">
+          <ion-avatar class="avatar">
+            <img src="../assets/img/danhsach.jpg">
+          </ion-avatar>
+          <p class="avatar-text">Danh sách phiếu khám bệnh</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div (click)="quanlyhoso()" class="btn-group">
+          <ion-avatar class="avatar">
+            <img src="../assets/img/quanly.jpg">
+          </ion-avatar>
+          <p class="avatar-text">Quản lý hồ sơ khám bệnh</p>
+        </div>
+      </ion-col>
+      <!-- (click)="taohoso()" -->
+      <ion-col>
+        <div  class="btn-group">
+          <ion-avatar class="avatar">
+            <img src="../assets/img/benhan1.jpg">
+          </ion-avatar>
+          <p class="avatar-text">Hồ sơ bệnh án</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-thumbnail>

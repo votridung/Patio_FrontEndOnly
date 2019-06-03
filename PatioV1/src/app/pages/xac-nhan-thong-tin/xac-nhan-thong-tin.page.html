@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <ion-buttons slot="start">
+      <ion-back-button style="--color: white" text="" icon="md-arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-label padding>Xác nhận thông tin</ion-label>
+  </ion-toolbar>
+
+  <ion-segment mode="md" (ionChange)="segmentChanged($event)" value="thong-tin-kham" [(ngModel)]="xacnhan">
+    <ion-segment-button  mode="md" (click)="change()" value="thong-tin-kham">
+      <ion-label>Thông tin khám</ion-label>
+    </ion-segment-button>
+    <ion-segment-button  mode="md" (click)="change()" value="nguoi-benh">
+      <ion-label>Thông tin người bệnh</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+
+
+<div [ngSwitch]="xacnhan">
+  <ion-list *ngSwitchCase="'thong-tin-kham'">
+    <ion-content>
+      <a ion-item>
+        <ion-card>
+          <ion-item placeholder=" Chưa cập nhật">
+            <ion-icon color="primary" class="sa" name="person"></ion-icon>Bác sĩ:
+            <ion-button fill="outline" slot="end">
+              <ion-icon name="trash"></ion-icon>
+            </ion-button>
+          </ion-item>
+          <ion-item placeholder=" Chưa cập nhật">
+            <ion-icon color="primary" class="sa" name="md-medkit"></ion-icon>Chuyên khoa:
+          </ion-item>
+          <ion-item placeholder=" Chưa cập nhật">
+            <ion-icon color="primary" class="sa" name="md-clipboard"></ion-icon>Phòng:
+          </ion-item>
+          <ion-item placeholder=" Chưa cập nhật">
+            <ion-icon color="primary" class="sa" name="md-calendar"></ion-icon>Ngày khám:
+          </ion-item>
+          <ion-item placeholder=" Chưa cập nhật">
+            <ion-icon color="primary" class="sa" name="md-alarm"></ion-icon>Giờ khám:
+          </ion-item>
+          <ion-item placeholder=" Chưa cập nhật">BHYT:</ion-item>
+        </ion-card>
+      </a>
+    </ion-content>
+    <ion-thumbnail class="outer" slot="secondary">
+      <ion-button (click)="onClick()" expand="block" class="btn" fill="outline">
+        Thêm chuyên khoa
+      </ion-button>
+      <ion-button expand="block" class="btn btn-next next" (click)="changeTab('nguoi-benh')">Tiếp tục</ion-button>
+      <!-- (click)="nextPage()" -->
+    </ion-thumbnail>
+  </ion-list>
+
+  <ion-list *ngSwitchCase="'nguoi-benh'">
+    <ion-content style="height: 86%;">
+      <a ion-item>
+        <app-thongtinnguoibenh></app-thongtinnguoibenh>
+      </a>
+    </ion-content>
+    <div padding>
+      <ion-button expand="block" class=" next" (click)="xacnhanQR()">Xác nhận</ion-button>
+    </div>
+  </ion-list>
+</div>

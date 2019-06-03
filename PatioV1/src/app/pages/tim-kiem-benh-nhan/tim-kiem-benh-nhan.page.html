@@ -1,0 +1,37 @@
+<ion-header class="font">
+  <ion-toolbar class="header border00" >
+      <ion-buttons class="header" slot="start">
+        <ion-back-button text=""  icon="md-arrow-back" class="header"></ion-back-button>      
+        </ion-buttons>
+    <ion-label style="padding-left: 5px" class="header">{{title}}</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="font" > 
+  <h5 class="h4-header">Nhập số hồ sơ</h5>
+  <ion-item class="border0 item-warning">
+      <a><ion-icon class="icon-warning" name="ios-information-circle-outline" slot="start"></ion-icon></a>
+    <!-- <a><ion-icon class="icon-warning"name="ios-information-circle-outline" slot="start"></ion-icon></a> -->
+    <ion-label class="label-warning" >Vui lòng chọn 1 trong các hồ sơ bên dưới hoặc bấm vào biểu tượng ở trên để thêm hồ sơ người bệnh.</ion-label>
+  </ion-item>
+  <br/>
+  <span class="padding16px span1" >Vui lòng nhập chính xác hồ sơ</span>  
+  <br/>
+  <ion-item style="padding-top: 5px;--inner-border-width:0px"> 
+    <input  type="number" class="input-search searchbar-input sc-ion-searchbar-md" placeholder="Ví dụ: N17-XXX" type="search" autocomplete="off" autocorrect="off"> 
+    <ion-button class="btn-search" >Tìm</ion-button>    
+  </ion-item>
+  <br/>
+  <a class="goi-y" href="#">Gợi ý tìm hồ sơ</a>    
+  <br/>
+
+  <!--Component benh nhan --------------------------------------- -->
+  <!-- <app-item-danh-sach-benh-nhan-component 
+      *ngFor="let benhnhan of results"
+      name="{{ benhnhan.name }}"
+      address= "{{ benhnhan.address.city}}"
+      mobile="{{ benhnhan.phone}}" > >
+  </app-item-danh-sach-benh-nhan-component> -->
+  <!-- -------------//----------------------------- -->
+
+</ion-content>

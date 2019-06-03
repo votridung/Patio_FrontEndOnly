@@ -1,0 +1,39 @@
+.bg-img {
+  width: 100%;
+  height: 100%;
+}
+ion-title{
+  color:white;
+}
+.img {
+  size: cover;
+  width: 100%;
+  height: 40%;
+}
+
+.avatar {
+  margin: 0 auto;
+  width: 110px;
+  height: 110px;
+}
+
+.avatar-text {
+  color: DodgerBlue;
+  width: 100%;
+  text-align: center;
+  font-size: smaller;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-group {
+  display: block;
+}
+
+// ::ng-deep .action-sheet .btn {
+//   background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+//   color: white;
+// }
+.select{
+  width: 90%;
+  margin: auto
+}

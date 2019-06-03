@@ -1,0 +1,108 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+      </ion-buttons>
+      <ion-label style="padding-left: 5px">Thông tin người bệnh</ion-label>
+    </ion-toolbar>
+    <ion-segment mode='md' [(ngModel)]="segment">
+      <ion-segment-button mode='md' value="thong-tin-nguoi-benh">
+        <ion-label class="segment"> Thông tin người bệnh </ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode='md' value="thong-tin-nguoi-than">
+        <ion-label class="segment">Thông tin người thân</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-header>
+  
+  
+  <div [ngSwitch]="segment">
+    <ion-list class="list1" *ngSwitchCase="'thong-tin-nguoi-benh'">
+      <ion-item class="item-top">
+          <ion-icon color="primary" style="padding-right: 10px" name="alert"></ion-icon>
+        <ion-text class="alert">Người bệnh vui lòng nhập đúng và đầy đủ thông tin bên dưới.</ion-text>
+      </ion-item>
+      <ion-content class="content">
+        <ion-label padding class="label">Họ và chữ lót<ion-text style=" font-style: italic">(có
+            dấu)*</ion-text>
+        </ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Họ và chữ lót"></ion-input>
+        </ion-item>
+        <ion-label padding class="label">Tên bệnh nhân<ion-text style=" font-style: italic">(có dấu)*</ion-text>
+        </ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Tên bệnh nhân"></ion-input>
+        </ion-item>
+        <ion-label padding class="label">Ngày sinh*</ion-label>
+        <ion-item   class="item-no">
+          <ion-datetime style="margin-left: -15px;"  class="text" displayFormat="DD/MM/YYYY" min="1994-03-14" max="2019-30-05"
+            value="2019-05-21T15:03:46.789"></ion-datetime>
+        </ion-item>
+        <ion-label padding class="label">Giới tính*</ion-label>
+        <ion-item class="item-no" (click)="GioiTinhPicker()">
+          <ion-label class="label">{{gioitinh}}</ion-label>
+        </ion-item>
+        <ion-label padding class="label">Quốc gia*</ion-label>
+        <ion-item class="item-no" (click)="QuocGiaPicker()">
+  
+          <ion-label class="label">{{quocgia}}</ion-label>
+        </ion-item>
+        <ion-label  class="label" padding>Số điện thoại*</ion-label>
+        <ion-item class="item-no">
+          <ion-input class="text" placeholder="Số điện thoại"></ion-input>
+        </ion-item>
+        <ion-label padding class="label">Tỉnh thành*</ion-label>
+        <ion-item class="item-no" (click)="TinhThanhPicker()">  
+          <ion-label class="label">{{tinhthanh}}</ion-label>
+        </ion-item>
+        <ion-label padding class="label">Quận/Huyện*</ion-label>
+        <ion-item class="item-no" (click)="QuanPicker()">
+          <ion-label class="label">{{quanhuyen}}</ion-label>
+        </ion-item>
+        <ion-label padding class="label">Phường/Xã*</ion-label>
+        <ion-item class="item-no" (click)="HuyenPicker()">
+          <ion-label class="label">{{phuongxa}}</ion-label>
+        </ion-item>
+        <ion-label class="label" padding>Địa chỉ<ion-text style=" font-style: italic">(có dấu)*</ion-text>
+        </ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Số nhà/Tên đường"></ion-input>
+        </ion-item>
+      </ion-content>
+      <ion-thumbnail class="outer" slot="secondary">
+        <ion-button expand="block" class="btn" (click)="taohsnb()" fill="outline">Quay lại</ion-button>
+        <ion-button expand="block" class="btn btn-next" (click)="changeTab('thong-tin-nguoi-than')">Tiếp tục</ion-button>
+      </ion-thumbnail>
+    </ion-list>
+    <ion-list class="list2" *ngSwitchCase="'thong-tin-nguoi-than'">
+      <div class="content2">
+        <ion-label class="label" padding>Tên người thân<ion-text style=" font-style: italic">(có dấu)</ion-text>
+        </ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Tên người thân"></ion-input>
+        </ion-item>
+        <ion-label class="label" padding>Quan hệ người thân</ion-label>
+        <ion-item class="item" (click)="quanheGDPicker()">
+          <ion-label class="label">{{quanhe}}</ion-label>
+        </ion-item>
+        <ion-label class="label" padding>Số điện thoại người thân<ion-text style=" font-style: italic">(có dấu)*
+          </ion-text>
+        </ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Số điện thoại"></ion-input>
+        </ion-item>
+        <ion-label class="label" padding>Email người thân</ion-label>
+        <ion-item class="item">
+          <ion-input class="text" placeholder="Email"></ion-input>
+        </ion-item>
+      </div>
+      <div class="outer" slot="secondary">
+        <ion-button expand="block" class="btn" fill="outline" (click)="changeTab('thong-tin-nguoi-benh')">Quay lại
+        </ion-button>
+        <ion-button expand="block" class="btn btn-next" (click)="xacnhanthongtin()">Tiếp tục</ion-button>
+        <!-- (click)="nextPage()" -->
+      </div>
+      
+    </ion-list>
+  </div>

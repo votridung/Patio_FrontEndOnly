@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-toolbar >
+      <ion-buttons slot="start">
+        <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+      </ion-buttons>
+      <ion-label class="label" padding>Thông tin cá nhân</ion-label>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-thumbnail class="form">
+<ion-thumbnail padding  class="outer" style="width: 100%; height: 120px;">
+    <ion-avatar class="avatar">
+      <img src="../assets/logo/avatar.jpg">
+    </ion-avatar>
+  </ion-thumbnail>
+<ion-card>
+  <ion-item>
+    <ion-label class="label">Họ tên</ion-label>
+    <ion-input value="Nguyễn Văn A" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Số điện thoại</ion-label>
+    <ion-input value="09681XXXXX" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Giới tính</ion-label>
+    <ion-input value="Nam" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="label">Ngày sinh</ion-label>
+    <ion-input value="21/03/2019" readonly></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label class="label">CMND</ion-label>
+      <ion-input value="09681XXXXX" readonly></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Email</ion-label>
+      <ion-input value="Nam" readonly></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Nghề nghiệp</ion-label>
+      <ion-input value="21/03/2019" readonly></ion-input>
+    </ion-item>
+  <ion-item>
+    <ion-label class="label">Địa chỉ</ion-label>
+    <ion-input value="Biên Hòa" readonly></ion-input>
+  </ion-item>
+</ion-card>
+</ion-thumbnail>
+<ion-footer padding style="--inner-border-width:0px">
+<ion-button expand="block" class="btn" (click)="nextPage()">Đổi thông tin</ion-button>
+</ion-footer>

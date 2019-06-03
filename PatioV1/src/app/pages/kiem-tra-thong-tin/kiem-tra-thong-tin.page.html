@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar class="header">
+        <ion-buttons slot="start" >
+          <ion-back-button style="--color: white" text="" icon="md-arrow-back"></ion-back-button>
+        </ion-buttons>
+        <ion-label style="padding-left: 5px">Kiểm tra thông tin</ion-label>
+      </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+<app-thongtinnguoibenh></app-thongtinnguoibenh>
+</ion-content>
+
+<div class="outer" slot="secondary">
+    <ion-button expand="block" class="btn" style="background: white" fill="outline" (click)="trangchu()">Trang chủ
+    </ion-button>
+    <ion-button expand="block" class="btn btn-next" (click)="hoantat()">Tiếp tục</ion-button>
+    <!-- (click)="nextPage()" -->
+  </div>
+

@@ -1,0 +1,45 @@
+.header {
+    --background: linear-gradient( #3867B4 , #0F94B4 );
+    --color: white;
+}
+
+
+ion-item{
+    --inner-border-width: 0px 0px 0.5px 0px;
+    --border-color:rgb(240, 240, 240) ; 
+}
+.background{
+    --background: #e5e8ed;
+  }
+  div{
+    background: #e5e8ed;
+  }
+  .outer {
+    height: 7%;
+    width: 100%;
+
+    display: flex;
+
+    box-orient: horizontal;
+
+    box-pack: center;
+
+    box-align: center;
+}
+ion-content{
+    min-height: 84%;
+    height: auto;
+    width: 100%;
+}
+.btn {
+    max-height: 40px;
+    width: 48%;
+    margin: 0 auto;
+    padding-bottom: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn-next {
+    color: white;
+    --background: linear-gradient( #3867B4 , #0F94B4 );
+}

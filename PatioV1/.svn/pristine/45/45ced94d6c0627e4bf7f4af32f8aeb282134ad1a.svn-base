@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>trang-chu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-button (click)="nextPage()">dang ky kham</ion-button>
+	<ion-button (click)="demoNgxStore()">demo ngrx/store</ion-button>
+</ion-content>

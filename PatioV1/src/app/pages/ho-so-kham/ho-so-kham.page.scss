@@ -1,0 +1,36 @@
+.border11{
+  border: var(--background);
+  --inner-border-width: 0px 0px 0px 0px;
+}
+.warning{
+  white-space: normal;
+  color: gray;font-size: 14px;
+  margin-left: 10px
+}
+.item-warning{
+  padding: right 16px;
+  --background:#f8f8fa;
+  --border: --background;
+}
+
+.header{
+  --background: linear-gradient( #3867B4,#0F94B4 )   ;
+  --color:#ddeaed;
+}
+.icon-warning{
+  color:royalblue;
+  border: --background;
+  padding: right 16px;
+}
+.border00{
+ 
+  --inner-border-width: 0px 0px 0px 0px;
+}
+.font{
+  font-family:Segoe UI;
+
+}
+img{
+  height: 20px;
+  width: 20px;
+}

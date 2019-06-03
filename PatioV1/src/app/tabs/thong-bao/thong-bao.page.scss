@@ -1,0 +1,32 @@
+.border0{
+    border: var(--background);
+    --inner-border-width: 0px 0px 0px 0px;
+  }
+  .h4-header{
+    color:#46a6c3; 
+    --font:bold; 
+    text-align: center;
+    font-weight: bold;
+  }
+  .header{
+    --background: linear-gradient( #3867B4,#0F94B4 );
+    --color:#ddeaed;
+  }
+  a{
+    color: #2f2f2f;
+  }
+  .width50{
+    width: 50px;
+  }
+  .closecircle{
+    color:#e80c0d;
+  }
+  .font{
+    font-family:Segoe UI;
+  }
+  ion-title{
+    color:white;
+  }
+  ion-text {
+    padding-right: 5px
+  }

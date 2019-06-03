@@ -1,0 +1,16 @@
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import * as routerConst from './router.const';
+const routes: Routes = [
+    { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+    { path: `${routerConst.RouterUrl.DANG_KY_KHAM}`, loadChildren: './pages/dang-ky-kham/dang-ky-kham.module#DangKyKhamPageModule' },
+    { path: `${routerConst.RouterUrl.TODO_DETAIL}`, loadChildren: './pages/todo/todo.module#TodoPageModule' },
+    { path: `${routerConst.RouterUrl.LIST_TODO}`, loadChildren: './pages/todo-list/todo-list.module#TodoListPageModule' }
+];
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule {}

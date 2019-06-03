@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" text="" icon="md-arrow-back"></ion-back-button>
+    </ion-buttons>
+    <ion-label style="padding-left: 5px">Chỉnh sửa thông tin</ion-label>
+  </ion-toolbar>
+</ion-header>
+<ion-thumbnail class="form">
+  <ion-thumbnail padding class="outer">
+    <ion-avatar class="avatar">
+      <img  src="../assets/img/addPicture.jpg">
+    </ion-avatar>
+  </ion-thumbnail>
+  <ion-card>
+    <ion-item>
+      <ion-label class="label">Họ tên:</ion-label>
+      <ion-input value=""></ion-input>
+    </ion-item>
+
+        <ion-radio-group [(ngModel)]="sexo" name="auto">
+            <ion-item >
+            <ion-label class="label">Giới tính:</ion-label>
+          <ion-item style="--inner-border-width:0px;">
+            <ion-label class="label">Nam</ion-label>
+            <ion-radio  mode='md' style="--inner-border-width: 1px;--border-color:blue" value="Nam"></ion-radio>
+          </ion-item>
+          <ion-item style="--inner-border-width:0px;">
+            <ion-label class="label">Nữ</ion-label>
+            <ion-radio  mode='md' value="Nữ"></ion-radio>
+          </ion-item>
+        </ion-item>
+        </ion-radio-group>
+
+    <ion-item>
+      <ion-label class="label">Ngày sinh:</ion-label>
+      <ion-datetime class="label" doneText="Đồng Ý" cancelText="Hủy" displayFormat="DD/MM/YYYY" min="1994-03-14" max="2019-21-05"
+        value="2019-05-23">
+      </ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">CMND/Pasport:</ion-label>
+      <ion-input value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Email</ion-label>
+      <ion-input value=""></ion-input>
+    </ion-item>
+    <ion-item (click)="showNgheNhiepPicker()">
+      <ion-label class="label">Nghề nghiệp:</ion-label>
+      <ion-label style="float: inline-end">{{framework}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Địa chỉ:</ion-label>
+      <ion-input value=""></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-label class="label">Số điện thoại:</ion-label>
+      <ion-input value="" readonly></ion-input>
+    </ion-item>
+  </ion-card>
+
+</ion-thumbnail>
+<ion-footer padding style="--inner-border-width:0px">
+    <ion-button expand="block" class="btn" >Cập nhật</ion-button> 
+    </ion-footer>

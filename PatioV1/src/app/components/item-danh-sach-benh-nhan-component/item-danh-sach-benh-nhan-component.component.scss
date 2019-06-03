@@ -1,0 +1,34 @@
+.border11{
+    border: var(--background);
+    --inner-border-width: 0px 0px 0px 0px;
+  }
+  .graycustom{
+    color: rgb(130, 130, 130);
+  }
+  .backgroundwhile{
+    --background:#fff;
+  }
+  .floatright{
+    float:right;
+  }
+  .padding2{
+    padding: 5px;
+  }
+  .icongray{
+    color: rgb(130, 130, 130);
+  }
+  .lbname{
+    font: bolder;color:#6886ce;
+  }
+  .font{
+    font-family:Segoe UI;
+
+  }
+img{
+  width: 20px;
+  height: 20px;
+}
+ion-item{
+  --inner-border-width: 0px 0px 0.5px 0px;
+      --border-color:rgb(240, 240, 240) ; 
+}

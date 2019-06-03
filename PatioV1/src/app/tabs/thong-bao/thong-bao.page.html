@@ -1,0 +1,45 @@
+<ion-header class="font">
+  <ion-toolbar class="header">
+    <ion-title style="text-align: center" class="header"> {{title}} </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="backgrondcontent font">
+
+  <ion-card style="--background: #ffffff" >
+ 
+    <br/>
+    <ion-item style="padding-left: 15px" class="border0">
+      <a> Phiếu đăng ký của bạn đã được xác nhận</a>
+      <ion-buttons slot="end"><ion-button><ion-icon class="width50 closecircle" name="ios-close-circle-outline"></ion-icon></ion-button></ion-buttons>
+    </ion-item>
+ 
+    <br/>
+  </ion-card>
+
+  <ion-card  class="backgrondcard">
+    <br/>
+
+<ion-item  class="border0" >
+  <div>
+        <ion-item class="border0" >
+            <a> Phiếu đăng ký {{MaPhieuKham}}  của bạn đã bị hủy</a>
+          </ion-item>
+          <ion-item class="border0" >          
+              <ion-label> <ion-text color="primary" >Lý do:</ion-text> Bác sĩ vắng mặt</ion-label>
+          </ion-item>      
+      </div>
+      <ion-buttons slot="end"><ion-button><ion-icon class="width50 closecircle" name="ios-close-circle-outline"></ion-icon></ion-button></ion-buttons>
+      </ion-item>
+    <br/>
+
+  </ion-card>
+</ion-content>
+<style>
+  .backgrondcontent{
+    --background: #f2f2f2;
+  }
+  .backgrondcard{
+    --background: #ffffff;
+  }
+</style>

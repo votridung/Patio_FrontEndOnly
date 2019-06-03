@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Todo Detail</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-button (click)="addItem()">add new item</ion-button>
+	<ion-item>
+		{{todo?.name}}
+	</ion-item>
+	<app-demo-component [params]="todo?.name"></app-demo-component>
+</ion-content>

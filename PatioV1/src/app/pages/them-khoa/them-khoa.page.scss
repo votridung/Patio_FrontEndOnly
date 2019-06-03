@@ -1,0 +1,46 @@
+.padding0{
+  --padding-start: 0px;
+}
+.color{
+  color: #3d91e3;
+}
+.colorblue{
+  color: #385bb9;
+}
+.checkbox1{
+  margin-left: 16px;
+  --border-radius: 0%;
+  --background-checked:#0ec254;
+  --border-color-checked: #0ec254;
+  --border-checked:0;
+  --border-color: #0ec254;
+}
+.background{
+  --background:#fafafa 
+}
+.header{
+  --background:linear-gradient( #3867B4,#0F94B4 ) ;
+  --color:#ddeaed;
+}
+.border00{
+  --inner-border-width: 0px 0px 0px 0px;
+}
+.color2{
+  color:#686868;
+}
+.item2{
+  --background: var(--background);
+}
+.font{
+  font-family:Segoe UI;
+
+}
+img{
+  width: 30px;
+  height: 30px;
+}
+.item1{
+  padding-right: 15px;
+  --inner-border-width: 0px 0px 0.5px 0px;
+  --border-color:rgb(240, 240, 240) ; 
+}

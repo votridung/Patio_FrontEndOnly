@@ -1,0 +1,27 @@
+.border0{
+    border: var(--background);
+    --inner-boritem-warningder-width: 0px 0px 0px 0px;
+    --inner-border-width: 0px 0px 0px 0px;
+  }
+  .header{
+    --background: linear-gradient( #3867B4,#0F94B4 );
+    --color:#ddeaed;
+  }
+  .backgrond{
+    --background: #e5e8ed;
+  }
+  .h3-1{
+    color:#545559;
+  }
+
+  ion-button{
+    color: white;
+    --background: linear-gradient( #3867B4,#0F94B4 );
+  }
+  div{
+    background: #e5e8ed;
+  }
+  ion-item{
+    --inner-border-width: 0px 0px 0.5px 0px;
+    --border-color:rgb(240, 240, 240) ; 
+  }

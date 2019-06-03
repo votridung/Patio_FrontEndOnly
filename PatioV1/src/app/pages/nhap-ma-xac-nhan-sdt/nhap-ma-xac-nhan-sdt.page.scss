@@ -1,0 +1,31 @@
+.bg{
+    background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+    width: 100%;
+    height: 100%;
+}
+.bg-image{
+    // background-image: url('../dang-nhap/img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+.logo{
+    margin: auto;
+    width: 100px; 
+    height: 100px;
+}
+.img{ 
+    width: 100%; 
+    height: 50%;
+}
+.footer{
+    text-align: center;
+}
+.btn :hover {
+    background-color: rgb(4, 0, 255);
+    color: rgb(244, 245, 247)
+}
+.btn {
+    color:  rgb(4, 0, 255);
+}

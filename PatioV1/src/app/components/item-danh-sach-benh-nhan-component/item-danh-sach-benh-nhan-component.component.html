@@ -1,0 +1,17 @@
+<ion-card (click)="kiemtrathongtin()" class="font">   
+    <ion-item class="backgroundwhile border11 btn --inner-border-width" >       
+        <ion-icon color="primary" class="icongray" name="contact" ></ion-icon>
+      <ion-label class="padding2 "><a class="lbname"> {{name}} </a></ion-label>  
+      <ion-buttons slot="end"><ion-button style="--color:#adaeb2"><ion-icon class="md button  ion-activatable ion-focusable hydrated header"name="ios-arrow-forward" ></ion-icon></ion-button></ion-buttons>      
+    </ion-item>       
+    <ion-item class="border11 graycustom backgroundwhile --inner-border-width" >      
+        <ion-icon color="primary" name="pin"></ion-icon>
+      <ion-label class="padding2"> {{address}} </ion-label>
+    </ion-item>  
+    <ion-item class="border11 graycustom backgroundwhile --inner-border-width"  >
+        <ion-icon color="primary" name="phone-portrait"></ion-icon>
+      <ion-label class="padding2"> {{mobile}} </ion-label>
+    </ion-item>  
+  </ion-card>
+
+  

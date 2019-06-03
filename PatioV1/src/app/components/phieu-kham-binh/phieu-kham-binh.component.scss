@@ -1,0 +1,33 @@
+.label{
+    height: 20px;
+    width: 100%;
+}
+.content{
+    height: 50%;
+    width: 100%;
+}
+.QRCode{
+    height: 30%;
+    width: 100%;
+} 
+.images {
+    margin: auto;
+    height: 130px;
+    width: 130px;
+} 
+ion-toolbar {
+    --background: linear-gradient( to bottom, #3867B4 0%,#0F94B4 100%);
+    --color:white;
+  }
+  ion-button {
+    --background: linear-gradient( to bottom, #3867B4 0%,#0F94B4 100%);
+    --color: white;
+  }
+  ion-item{
+    --inner-border-width:0px;
+} 
+ion-card {
+    ion-label{
+        padding-left: 10px
+    }
+}

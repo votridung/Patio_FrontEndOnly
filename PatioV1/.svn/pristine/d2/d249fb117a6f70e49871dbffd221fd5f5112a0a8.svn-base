@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+		<ion-title>dang ky kham</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<app-demo-component [params]="passParams" (eventFromComponentToPage)="handleEventFromComponent($event)"></app-demo-component>
+
+	<app-demo-expand *ngFor="let technology of technologies"
+		 name="{{ technology.name }}"
+		 description="{{ technology.description }}"
+		 image="{{ technology.image }}"
+		 (change)="captureName($event)">
+	</app-demo-expand>
+</ion-content>

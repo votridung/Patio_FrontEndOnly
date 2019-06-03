@@ -1,0 +1,79 @@
+.bg-img {
+  width: 100%;
+  height: 100%;
+}
+
+// .logo {
+//   size: cover;
+//   width: 100%;
+//   height: 100%;
+// }
+.img {
+  size: cover;
+  width: 100%;
+  height: 40%;
+}
+
+
+
+.avatar {
+  border-style: solid;
+  border-width: 1px;
+  width: 110px;
+  height: 110px;
+  background: white;
+  margin: 0 auto;
+}
+
+// .avatar-text {
+//   color: DodgerBlue;
+//   width: 100%;
+//   font-size: smaller;
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+//   padding-left: 10px
+// }
+
+
+.outer {
+
+  width: 100%;
+
+  display: flex;
+
+  box-orient: horizontal;
+
+  box-pack: center;
+
+  box-align: center;
+}
+
+.btn {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  --background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+.label {
+  width: 40%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ion-toolbar {
+  color: white;
+  --background: linear-gradient(to bottom, #3867B4 0%, #0F94B4 100%);
+}
+
+ion-input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ion-item{
+  --inner-border-width: 0px;
+}

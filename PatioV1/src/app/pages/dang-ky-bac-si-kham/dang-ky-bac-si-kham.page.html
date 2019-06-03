@@ -1,0 +1,104 @@
+<ion-header>
+    <ion-toolbar class="header border00">
+      <ion-buttons slot="start">
+        <ion-back-button text="" icon="md-arrow-back" class="header"></ion-back-button>
+      </ion-buttons>
+      <ion-label padding>{{title}}</ion-label>
+    </ion-toolbar>
+  </ion-header>
+  
+  <!-- CONTENT-----------------//------------------------------------------------>
+  <ion-content>
+  
+    <!-- Ten benh nhan----------------------------->
+    <ion-item  style="--background: #e5e8ed;--color:#5071c3; --inner-border-width: 0px">
+      <ion-icon class="color"  name="contact"  slot="start"></ion-icon>
+      <a style="padding-left: 5px" class="colorblue"> {{name}} </a>
+      <ion-buttons style="padding-right: 15px" slot="end">
+        <ion-button style="--color:#adaeb2">
+          <ion-icon class="md button  ion-activatable ion-focusable hydrated header" name="ios-arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+  
+    <!-- Ten benh vien ------------------------------>
+    <ion-item class="item1">
+      <ion-icon class="color" name="pin" slot="start" ></ion-icon>
+      <a style="padding-left: 5px">
+        <ion-label> {{nameHospital}} </ion-label>
+      </a>
+    </ion-item>
+  
+    <!-- Bác sĩ-------------------------------->
+    <ion-item class="item" (click)="Dangkytheobacsi()" _ngcontent-c3="" class="item1 md in-list ion-activatable ion-focusable item-label hydrated">
+        <ion-icon class="color"  name="person" slot="start"></ion-icon>
+      <ion-label style="padding-left: 5px" _ngcontent-c3="" class="sc-ion-label-md-h sc-ion-label-md-s md hydrated">
+          <h3 class="color2">Bác sĩ</h3>
+          <a> {{DrName}} </a>
+        </ion-label>
+        <ion-buttons slot="end">
+            <ion-button style="--color:#adaeb2">
+              <ion-icon class="md button  ion-activatable ion-focusable hydrated header" name="ios-arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+      </ion-item>
+    
+    <!-- Chuyen Khoa----------------------------->
+    <ion-item class="item" (click)="chonkhoa()" _ngcontent-c3="" class="item1 md in-list ion-activatable ion-focusable item-label hydrated">
+        <ion-icon class="color"  name="thermometer" slot="start"></ion-icon>
+        <ion-label style="padding-left: 5px" _ngcontent-c3="" class="sc-ion-label-md-h sc-ion-label-md-s md hydrated">
+        <h3 class="color2">Chuyên khoa</h3>
+        <a> {{Specialist}} </a>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button style="--color:#adaeb2">
+          <ion-icon class="md button  ion-activatable ion-focusable hydrated header" name="ios-arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    
+    <!-- Ngày khám ------------------------------->
+    <ion-item class="item" _ngcontent-c3="" class="item1 md in-list ion-activatable ion-focusable item-label hydrated">
+      <ion-icon class="color"  name="calendar" slot="start"></ion-icon>
+      <ion-label style="padding-left: 5px" _ngcontent-c3="" class="sc-ion-label-md-h sc-ion-label-md-s md hydrated">
+          <h3 class="color2">Ngày khám</h3>
+          <a>{{date}}</a>
+        </ion-label>
+        
+      </ion-item>
+    
+    <!-- Phòng và giờ khám ---------------------->
+    <ion-item class="item" (click)="chonphongkham()" _ngcontent-c3="" class="item1 md in-list ion-activatable ion-focusable item-label hydrated">
+        <ion-icon class="color"  name="md-alarm" slot="start"></ion-icon>
+        <ion-label style="padding-left: 5px" _ngcontent-c3="" class="sc-ion-label-md-h sc-ion-label-md-s md hydrated">
+        <h3 class="color2">Phòng khám và giờ khám</h3>
+        <a> {{RoomTime}} </a>
+      </ion-label>
+      <ion-buttons slot="end">
+        <ion-button style="--color:#adaeb2">
+          <ion-icon class="md button  ion-activatable ion-focusable hydrated header" name="ios-arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <!-------------------- //---------------------->
+    <br />
+    <ion-label padding style="color:#c58b6c">Vui lòng chọn đối tượng y tế </ion-label>
+  
+    <!-- Check BHYT ------------------------------->
+    <ion-item-divider class="border00 item2">
+      <ion-label padding class="colorblue">BHYT</ion-label>
+      <ion-radio mode='md' (click)="changeY();presentActionSheet()" [checked]="checkedY"  class="checkbox1"></ion-radio>
+      <ion-label class="colorblue" style="padding-left: 5px "> Có</ion-label>
+      <ion-radio mode='md' (click)="changeN()" class="checkbox1" [checked]="checkedN" ></ion-radio>
+      <ion-label class="colorblue" style="padding-left: 5px "> Không</ion-label>
+    </ion-item-divider>
+    <!-- ------------------------------------------ -->
+  
+  </ion-content>
+  
+  <!-- Button Action Sheet component------------------>
+
+  <div padding >
+      <ion-button (click)="onClick()" class="btnAS header" expand="block">Đặt khám</ion-button>
+  </div>
+  <!-- --------End-game------///---------------------->
