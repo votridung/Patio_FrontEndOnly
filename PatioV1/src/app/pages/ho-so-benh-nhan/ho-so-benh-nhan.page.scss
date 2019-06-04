@@ -1,10 +1,12 @@
 .border11{
     border: var(--background);
     --inner-border-width: 0px 0px 0px 0px;
+    margin-bottom: 20px
   }
   .warning{
     white-space: normal;
-    color: gray;font-size: 14px;
+    color: gray;
+    font-size: small;
     margin-left: 10px
   }
   .item-warning{

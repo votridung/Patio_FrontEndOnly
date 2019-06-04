@@ -14,9 +14,9 @@
     </ion-segment-button>
   </ion-segment> -->
 </ion-header>
-<div padding style="width: 100%; height: 100%;" [ngSwitch]="segmentChange">
+<div style="width: 100%; height: 100%;" [ngSwitch]="segmentChange">
 
-  <ion-card (click)="phieuhuy()"     *ngSwitchCase="'inocent'">
+  <ion-card (click)="phieuhuy()"  *ngSwitchCase="'inocent'">
     <ion-item style="--inner-border-width: 0px 0px 0px 0px;">
       Mã phiếu: <ion-label class="output status">PT001</ion-label>
     </ion-item>
@@ -31,7 +31,7 @@
     </ion-item>
   </ion-card>
 
-  <ion-card (click)="onClick()"   *ngSwitchCase="'inocent'">
+  <ion-card (click)="onClick()" style="margin-top: -15px;"  *ngSwitchCase="'inocent'">
     <ion-item style="--inner-border-width: 0px 0px 0px 0px;">
       Mã phiếu:<ion-label class="output status">PT001</ion-label>
     </ion-item>
